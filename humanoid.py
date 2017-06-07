@@ -350,6 +350,9 @@ def zoom(a):
     
 def myKey(key,x,y):
     global v
+    ch = key.decode("utf-8")
+    #print(type(key), key, type(ch), ch)
+    key = ch
     if(key == 'r'):
         trunk.ry += 5
         trunk.ry %= 360
